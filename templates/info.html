@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    👨‍💻CodeTyper: Como Jugar?
+{% endblock %}
+
+{% block main %}
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href="/pregame">
+            <img src="/static/logo.png" alt="Logo" class="logo-image">
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a class="navbar-option" href="/pregame">🎮Juega!</a>
+        <a class="navbar-option" href="/leaderboard">🏆Top Jugadores</a>
+        <a class="navbar-option" href="/profile">🧍Perfil </a>
+        <a class="navbar-option" href="/color">🎨Personaliza Color </a>
+        <a class="navbar-option" href="/logout">👋Cerrar Sesion</a>
+    </div>
+</nav>
+
+<h1>Como Jugar?</h1>
+<br>
+<p id="cs50">
+    Una vez iniciada la partida debes escribir lo mas rapido que puedas 
+    <br>
+    <br>
+    La partida acabara si se te acaban los 60 segundos o si completas el texto antes de tiempo
+    <br>
+    <br>
+    Una vez finalizada la partida recuerda darle click al boton de fin de juego que aparecera para guardar tus resultados 
+    <br>
+    <br>
+    Luego puedes ver si tu tiempo figura en los mejores en <a href="/leaderboard"> leaderboard</a> o cambiar el color de fondo en <a href="/color"> cambiar color</a> o solo ver tu perfil en <a href="/profile">perfil </a>
+    <br>
+    <br>
+    Suerte!
+
+{% endblock %}
